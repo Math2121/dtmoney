@@ -29,7 +29,7 @@ interface TransacitonContxtData {
   transactions: Transaction[];
   createTransaction: (transaction: TransactionInput) => Promise<void>;
 }
- const TransactionsContext = createContext<TransacitonContxtData>(
+export const TransactionsContext = createContext<TransacitonContxtData>(
   {} as TransacitonContxtData
 );
 
